@@ -1,16 +1,17 @@
 import data
-from sandwich_maker import SandwichMaker
-from cashier import Cashier
+import sandwich_maker
+import cashier
 
 # Make an instance of other classes here
 resources = data.resources
 recipes = data.recipes
-sandwich_maker_instance = SandwichMaker(resources)
-cashier_instance = Cashier()
+sandwich_maker_instance = sandwich_maker.SandwichMaker(resources)
+cashier_instance = cashier.Cashier()
 
 def main():
     is_on = True
 
+    # noinspection DuplicatedCode
     while is_on:
 
         order = input("What would you like? (small / medium / large / off / report): ").lower()

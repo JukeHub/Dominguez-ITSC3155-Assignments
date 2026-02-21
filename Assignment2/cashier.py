@@ -2,9 +2,10 @@ class Cashier:
     def __init__(self):
         pass
 
+    # noinspection DuplicatedCode
     def process_coins(self):
         """Returns the total calculated from coins inserted.
-           Hint: include input() function here, e.g. input("how many quarters?: ")"""
+                   Hint: include input() function here, e.g. input("how many quarters?: ")"""
         print("Please insert coins.")
         large_dollars = int(input("how many large dollars?: "))
         half_dollars = int(input("how many half dollars?: "))
