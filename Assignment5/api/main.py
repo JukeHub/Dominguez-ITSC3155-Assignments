@@ -181,7 +181,7 @@ def read_order_details(db: Session = Depends(get_db)):
 def read_one_order_detail(order_detail_id: int, db: Session = Depends(get_db)):
     order_detail = order_details.read_one(db, order_detail_id=order_detail_id)
     if order_detail is None:
-        raise HTTPException(status_code=404, detail="OrderDetail Details not found")
+        raise HTTPException(status_code=404, detail="Order Details not found")
     return order_detail
 
 
